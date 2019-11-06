@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -54,6 +54,95 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+
+.container{
+	border: 2px solid grey;
+	margin: 1%;
+
+	.top-nav{
+		width: 40%;	
+		margin-left: 60%;
+		border-bottom: 3px solid grey;
+		.first{
+			display: flex;
+			justify-content: space-around;
+			justify-items: flex-end;
+		}//navigation div close
+	}//top-nav div close
+
+		
+
+	#Intro{
+	margin: 5%;
+	border: 2px solid black;
+
+		h1{
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2%;
+		}//h1 in Intro section close
+
+		.quoteDiv{
+			display: flex;
+			margin-left: 25%;
+			margin-right: 25%;
+			justify-content: center;
+			background-color: blue;
+			border: solid 2px green;
+			
+				h3{
+					font-size: 1.3rem;
+					text-align: center;
+				}//h3 in quote div close
+		}//quote div close
+
+		.buttonDiv{
+			display: flex;
+			justify-content: center;
+			margin-top: 3%;
+			margin-bottom: 3%;
+
+			button{
+				font-size: 1.1rem;
+				width: 15%;
+				border-radius: 12px;
+			}//close of button specs
+		}//close of button div
+	}//Intro Section close
+
+	#skills{
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin: 2%;
+
+		.left-skill{
+			width: 40%;
+			border: 2px black solid;
+			h2{
+				margin-bottom: 3%;
+				margin-top: 2%;
+				text-align: center;
+				font-size: 1.5rem;
+			}//h2 of skills section close
+			p{
+				margin:1%;
+				text-align: center;
+			}//p section close
+		}//left side of skills section close
+
+		.right-skill{
+			width: 40%;
+			border: 2px black solid;
+		}//right side of skills section close
+	}//skills section (middle)
+		
+	
+}//container section close
+
+
+
 
