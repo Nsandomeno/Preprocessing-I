@@ -185,10 +185,12 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   margin: 2%;
+  border-bottom: 2px black solid;
 }
 .container #skills .left-skill {
   width: 40%;
   border: 2px black solid;
+  margin-bottom: 2%;
 }
 .container #skills .left-skill h2 {
   margin-bottom: 3%;
@@ -203,4 +205,23 @@ body {
 .container #skills .right-skill {
   width: 40%;
   border: 2px black solid;
+}
+.container #skills .right-skill .table-one {
+  width: 100%;
+}
+.container #skills .right-skill .table-one th {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-bottom: 1px solid grey;
+}
+.container #skills .right-skill .table-one td {
+  text-align: center;
+}
+.container #workHistory {
+  margin: 2%;
+}
+.container #workHistory h2 {
+  font-size: 1.5rem;
 }
