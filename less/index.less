@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -54,6 +54,184 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+//variables
+@head-color: skyblue;
+//mixins
+.table-header(){
+	text-align:center;
+	font-size:1.5rem;
+}
+.flex-center(){
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.container{
+	border: 2px solid black;
+	margin: 1%;
+
+	.top-nav{
+		width: 40%;	
+		margin-left: 60%;
+		border-bottom: 3px solid grey;
+
+		@media(max-width:500px){
+			width: 100%;
+			margin: 0%;
+		}
+		.first{
+			display: flex;
+			justify-content: space-around;
+			justify-items: flex-end;
+
+			@media(max-width:500px){
+				flex-direction: column;
+				align-items: center;
+			}	
+				a{
+					text-decoration: none;
+					color: black;
+
+					@media(max-width: 500px){
+						text-decoration: none;
+						margin-top: 2%;
+						margin-bottom: 2%;
+						border-bottom: 2px black solid;
+					}
+				}
+		}//navigation div close
+	}//top-nav div close
+
+		
+
+	#Intro{
+	margin: 5%;
+	border: 2px solid black;
+
+		h1{
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2%;
+			color: @head-color;
+		}//h1 in Intro section close
+
+		.quoteDiv{
+			.flex-center();
+			margin-left: 25%;
+			margin-right: 25%;
+			background-color: blue;
+			border: solid 2px black;
+	
+				h3{
+					font-size: 1.3rem;
+					text-align: center;
+					color: @head-color;
+				}//h3 in quote div close
+		}//quote div close
+
+		.buttonDiv{
+			.flex-center();
+			margin-top: 3%;
+			margin-bottom: 3%;
+
+			button{
+				font-size: 1.1rem;
+				width: 15%;
+				border-radius: 12px;
+			}//close of button specs
+		}//close of button div
+	}//Intro Section close
+
+	#skills{
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin: 2%;
+		border-bottom: 2px black solid;
+
+		.left-skill{
+			width: 40%;
+			border: 2px black solid;
+			margin-bottom: 2%;
+			h2{
+				margin-bottom: 3%;
+				margin-top: 2%;
+				text-align: center;
+				font-size: 1.5rem;
+				color: @head-color;
+			}//h2 of skills section close
+			p{
+				margin:1%;
+				text-align: center;
+			}//p section close
+		}//left side of skills section close
+
+		.right-skill{
+			width: 40%;
+			border: 2px black solid;
+
+			.table-one{
+				width: 100%;
+				th{
+					.table-header();
+					color: @head-color;
+					margin-top: 1%;
+					margin-bottom: 1%;
+					border-bottom: 1px solid grey;
+				}
+				td{
+					text-align: center;
+				}
+			}//close table
+		}//right side of skills section close
+	}//skills section (middle)
+
+	#workHistory{
+		margin: 2%;
+
+		h2{
+			font-size: 1.5rem;
+			margin-left: 2%;
+			color: @head-color;
+		}//workHistory h2 close
+
+		.table-two{
+			margin: 2%;
+			border: 2px black solid;
+			.work-table{
+				width: 100%;
+				th{
+					.table-header();
+					margin-bottom: 3%;
+					background-color: grey;
+					color: @head-color;
+				}
+				td{
+					text-align: center;
+				}
+				tr{
+					border-top: solid black 2px;
+					border-bottom: solid black 2px;
+				}
+			}//close work table
+		}//table-two close	
+	}//workHistory close
+
+	#contact{
+
+		nav{
+			display: flex;
+			justify-content: space-around;
+		}
+
+	}
+
+}//container section close
+
+
+
 
