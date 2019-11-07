@@ -135,7 +135,7 @@ body {
   height: 100%;
 }
 .container {
-  border: 2px solid grey;
+  border: 2px solid black;
   margin: 1%;
 }
 .container .top-nav {
@@ -245,7 +245,7 @@ body {
   border-top: solid black 2px;
   border-bottom: solid black 2px;
 }
-.container #workHistory #contact nav {
+.container #contact nav {
   display: flex;
   justify-content: space-around;
 }
