@@ -57,14 +57,15 @@ html, body {
 	height: 100%;
 }
 //variables
-
+@head-color: skyblue;
 //mixins
-@table-header(){
+.table-header(){
 	text-align:center;
 	font-size:1.5rem;
 }
-@head-two(){
-	
+.flex-center(){
+	display: flex;
+	justify-content: center;
 }
 
 
@@ -77,10 +78,31 @@ html, body {
 		width: 40%;	
 		margin-left: 60%;
 		border-bottom: 3px solid grey;
+
+		@media(max-width:500px){
+			width: 100%;
+			margin: 0%;
+		}
 		.first{
 			display: flex;
 			justify-content: space-around;
 			justify-items: flex-end;
+
+			@media(max-width:500px){
+				flex-direction: column;
+				align-items: center;
+			}	
+				a{
+					text-decoration: none;
+					color: black;
+
+					@media(max-width: 500px){
+						text-decoration: none;
+						margin-top: 2%;
+						margin-bottom: 2%;
+						border-bottom: 2px black solid;
+					}
+				}
 		}//navigation div close
 	}//top-nav div close
 
@@ -94,25 +116,25 @@ html, body {
 			text-align: center;
 			font-size: 2rem;
 			margin-bottom: 2%;
+			color: @head-color;
 		}//h1 in Intro section close
 
 		.quoteDiv{
-			display: flex;
+			.flex-center();
 			margin-left: 25%;
 			margin-right: 25%;
-			justify-content: center;
 			background-color: blue;
-			border: solid 2px green;
-			
+			border: solid 2px black;
+	
 				h3{
 					font-size: 1.3rem;
 					text-align: center;
+					color: @head-color;
 				}//h3 in quote div close
 		}//quote div close
 
 		.buttonDiv{
-			display: flex;
-			justify-content: center;
+			.flex-center();
 			margin-top: 3%;
 			margin-bottom: 3%;
 
@@ -140,6 +162,7 @@ html, body {
 				margin-top: 2%;
 				text-align: center;
 				font-size: 1.5rem;
+				color: @head-color;
 			}//h2 of skills section close
 			p{
 				margin:1%;
@@ -154,7 +177,8 @@ html, body {
 			.table-one{
 				width: 100%;
 				th{
-					@table-header();
+					.table-header();
+					color: @head-color;
 					margin-top: 1%;
 					margin-bottom: 1%;
 					border-bottom: 1px solid grey;
@@ -172,17 +196,19 @@ html, body {
 		h2{
 			font-size: 1.5rem;
 			margin-left: 2%;
+			color: @head-color;
 		}//workHistory h2 close
 
 		.table-two{
 			margin: 2%;
-			border: 2px red solid;
+			border: 2px black solid;
 			.work-table{
 				width: 100%;
 				th{
-					@table-header();
+					.table-header();
 					margin-bottom: 3%;
 					background-color: grey;
+					color: @head-color;
 				}
 				td{
 					text-align: center;

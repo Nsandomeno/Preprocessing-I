@@ -143,10 +143,34 @@ body {
   margin-left: 60%;
   border-bottom: 3px solid grey;
 }
+@media (max-width: 500px) {
+  .container .top-nav {
+    width: 100%;
+    margin: 0%;
+  }
+}
 .container .top-nav .first {
   display: flex;
   justify-content: space-around;
   justify-items: flex-end;
+}
+@media (max-width: 500px) {
+  .container .top-nav .first {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .top-nav .first a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .container .top-nav .first a {
+    text-decoration: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 2px black solid;
+  }
 }
 .container #Intro {
   margin: 5%;
@@ -156,18 +180,20 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2%;
+  color: skyblue;
 }
 .container #Intro .quoteDiv {
   display: flex;
+  justify-content: center;
   margin-left: 25%;
   margin-right: 25%;
-  justify-content: center;
   background-color: blue;
-  border: solid 2px green;
+  border: solid 2px black;
 }
 .container #Intro .quoteDiv h3 {
   font-size: 1.3rem;
   text-align: center;
+  color: skyblue;
 }
 .container #Intro .buttonDiv {
   display: flex;
@@ -197,6 +223,7 @@ body {
   margin-top: 2%;
   text-align: center;
   font-size: 1.5rem;
+  color: skyblue;
 }
 .container #skills .left-skill p {
   margin: 1%;
@@ -211,7 +238,8 @@ body {
 }
 .container #skills .right-skill .table-one th {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: skyblue;
   margin-top: 1%;
   margin-bottom: 1%;
   border-bottom: 1px solid grey;
@@ -225,18 +253,21 @@ body {
 .container #workHistory h2 {
   font-size: 1.5rem;
   margin-left: 2%;
+  color: skyblue;
 }
 .container #workHistory .table-two {
   margin: 2%;
-  border: 2px red solid;
+  border: 2px black solid;
 }
 .container #workHistory .table-two .work-table {
   width: 100%;
 }
 .container #workHistory .table-two .work-table th {
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 3%;
   background-color: grey;
+  color: skyblue;
 }
 .container #workHistory .table-two .work-table td {
   text-align: center;
